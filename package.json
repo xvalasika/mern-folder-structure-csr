@@ -1,7 +1,7 @@
 {
-  "name": "trading-records",
+  "name": "mern-csr",
   "version": "1.0.0",
-  "description": "Tracking of trading stats",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
