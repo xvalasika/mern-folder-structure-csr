@@ -12,11 +12,6 @@ const cors = require('cors');
 
 const AppError = require('./utils/appError');
 const globalErrorHandler = require('./controllers/errorController');
-// const tourRouter = require('./routes/tourRoutes');
-// const userRouter = require('./routes/userRoutes');
-// const reviewRouter = require('./routes/reviewRoutes');
-// const viewRouter = require('./routes/viewRoutes');
-// const bookingRouter = require('./routes/bookingRoutes');
 
 // Start express app
 const app = express();
@@ -30,8 +25,8 @@ app.set('views', path.join(__dirname, 'views'));
 // Implement CORS - Access-Control-Allow-Origin *
 // CORS for basic operations: GET and POST
 app.use(cors());
-// Example: If back-end: api.natours.com, front-end: natours.com
-// app.user(cors({ origin: 'https://www.natours.com' }));
+// Example: If back-end: api.example.com, front-end: example.com
+// app.user(cors({ origin: 'https://www.example.com' }));
 
 // CORS for complex operations: PATCH, PUT, DELETE,...
 app.options('*', cors());
